@@ -1,5 +1,5 @@
 # Start with a golang base image
-FROM int-registry.fortna.com/dockerhub/library/golang:1.22.1 as builder
+FROM golang:1.22.1 as builder
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
