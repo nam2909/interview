@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  counter:
+    image: counter:local
+    ports:
+      - "8080:8080"
+    volumes:
+      - counter-data:/app
+
+volumes:
+  counter-data:
